@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG with JavaScript</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Basic Usage-->
+<!-- You can place Font Awesome icons just about anywhere using a CSS style prefix and the icon’s name. Font Awesome is designed to be used with inline elements (we like the <i> tag for brevity, but using a <span> is more semantically correct)-->
+
+<!--Regular icon -->
+<i class="far fa-user"></i>
+<!--Brands icon-->
+<i class="fab fa-github-square"></i>
+<!--Solid icon-->
+<i class="fas fa-address-book"></i>
+
+<!--Additional Styling-->
+<i class="fas fa-camera-retro fa-xs"></i>
+<i class="fas fa-camera-retro fa-sm"></i>
+<i class="fas fa-camera-retro fa-lg"></i>
+<i class="fas fa-camera-retro fa-2x"></i>
+<i class="fas fa-camera-retro fa-3x"></i>
+<i class="fas fa-camera-retro fa-5x"></i>
+<i class="fas fa-camera-retro fa-7x"></i>
+<i class="fas fa-camera-retro fa-10x"></i>
+
+<!--Fixed Width Icons-->
+<!--Use fa-fw to set icons to the same fixed width. Great to use when varying icon widths would throw off vertical alignment. Especially useful in things like nav lists & list groups. For clarity in the example, we’ve added a background color on the icon so you can see the fixed width-->
+<div><i class="fas fa-home fa-fw" style="background:mistyrose"></i> Home</div>
+<div><i class="fas fa-info fa-fw" style="background:mistyrose"></i> Info</div>
+<div><i class="fas fa-book fa-fw" style="background:mistyrose"></i> Library</div>
+<div><i class="fas fa-pencil-alt fa-fw" style="background:mistyrose"></i> Applications</div>
+<div><i class="fas fa-cog fa-fw" style="background:mistyrose"></i> Settings</div>
+
+<!--List Icons-->
+<!--Use fa-ul and fa-li to replace default bullets in unordered lists.-->
+<ul class="fa-ul">
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+    <li><span class="fa-li"><i class="fas fa-spinner"></i></span>replace bullets</li>
+    <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+</ul>
+
+<!--Bordered & Pulled Icons-->
+<!--Use fa-border and fa-pull-right or fa-pull-left for easy pull quotes or article icons.-->
+<i class="fas fa-quote-left fa-2x fa-pull-left fa-border"></i>
+Gatsby believed in the green light, the orgastic future that year by year recedes before us.
+It eluded us then, but that’s no matter — tomorrow we will run faster, stretch our arms further...
+And one fine morning — So we beat on, boats against the current, borne back ceaselessly into the past.
+
+<!--Animated Icons-->
+<!--Use the fa-spin class to get any icon to rotate, and use fa-pulse to have it rotate with 8 steps. Works especially well with fa-spinner & everything in the spinner icons category.-->
+<div class="fa-3x">
+    <i class="fas fa-spinner fa-spin"></i>
+    <i class="fas fa-circle-notch fa-spin"></i>
+    <i class="fas fa-sync fa-spin"></i>
+    <i class="fas fa-cog fa-spin"></i>
+    <i class="fas fa-spinner fa-pulse"></i>
+</div>
+
+<!--Power Transforms NEW-->
+<!--Thanks to the power of SVG in Font Awesome 5, now you can scale, position, flip, & rotate icons arbitratily using the data-fa-transform element attribute. You can even combine them for some super-useful effects.-->
+
+<!--Power Transforms: Scaling-->
+<!--Power Transform scaling effects icon size without changing or moving the container. To scale icons up or down, use grow-# and shrink-# with any arbitrary value, including decimals. Units are 1/16em. For clarity in the example, we’ve added a background color on the icon so you can see the effect.-->
+<div class="fa-4x">
+    <i class="fas fa-magic" data-fa-transform="shrink-8" style="background:MistyRose"></i>
+    <i class="fas fa-magic" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="grow-6" style="background:MistyRose"></i>
+</div>
+
+<!--Power Transforms: Positioning-->
+<!--Power Transform positioning effects icon location without changing or moving the container. To move icons up, down, left, or right, use up-#, down-#, left-#, and right-# with any arbitrary value, including decimals. Units are 1/16em. For clarity in the example, we’ve added a background color on the icon so you can see the effect.-->
+<div class="fa-4x">
+    <i class="fas fa-magic" data-fa-transform="shrink-8" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="shrink-8 up-6" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="shrink-8 right-6" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="shrink-8 down-6" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="shrink-8 left-6" style="background:MistyRose"></i>
+</div>
+
+<!--Power Transforms: Rotating & Flipping-->
+<!--Power Transform rotating & flipping effects icon angle and reflection without changing or moving the container. To rotate or flip icons use any combination of rotate-#, flip-v, and flip-h with any arbitrary value. Units are degrees with negative numbers allowed (see fifth icon in the example). For clarity in the example, we’ve added a background color on the icon so you can see the effect.-->
+<div class="fa-4x">
+    <i class="fas fa-magic" data-fa-transform="rotate-90" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="rotate-180" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="rotate-270" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="rotate-30" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="rotate--30" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="flip-v" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="flip-h" style="background:MistyRose"></i>
+    <i class="fas fa-magic" data-fa-transform="flip-v flip-h" style="background:MistyRose"></i>
+</div>
+
+<!--Masking-->
+<!--Combine two icons create one single-color shape, thanks to the power of SVG in Font Awesome 5! Use it with our new Power Transforms for some really awesome effects.-->
+<div class="fa-4x">
+    <i class="fas fa-pencil-alt" data-fa-transform="shrink-10 up-.5" data-fa-mask="fas fa-comment"
+       style="background:MistyRose"></i>
+    <i class="fab fa-facebook-f" data-fa-transform="shrink-3.5 down-1.6 right-1.25" data-fa-mask="fas fa-circle"
+       style="background:MistyRose"></i>
+    <i class="fas fa-headphones" data-fa-transform="shrink-6" data-fa-mask="fas fa-square"
+       style="background:MistyRose"></i>
+</div>
+
+<!--Layering, Text, & Counters-->
+<!--Layers are the new way to place icons and text visually on top of each other, replacing our classic icons stacks. With this new approach you can use more than 2 icons. Yuss-->
+<div class="fa-4x">
+  <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-circle" style="color:Tomato"></i>
+    <i class="fas fa-times fa-inverse " data-fa-transform="shrink-6"></i>
+  </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-bookmark"></i>
+    <i class="fa-inverse fas fa-heart" data-fa-transform="shrink-10 up-2" style="color:Tomato"></i>
+  </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-play" data-fa-transform="rotate--90 grow-2"></i>
+    <i class="fas fa-sun fa-inverse" data-fa-transform="shrink-10 up-2"></i>
+    <i class="fas fa-moon fa-inverse" data-fa-transform="shrink-11 down-4.2 left-4"></i>
+    <i class="fas fa-star fa-inverse" data-fa-transform="shrink-11 down-4.2 right-4"></i>
+  </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-calendar"></i>
+    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
+  </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-certificate"></i>
+    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11.5 rotate--30"
+          style="font-weight:900">NEW</span>
+  </span>
+
+    <span class="fa-layers fa-fw" style="background:MistyRose">
+    <i class="fas fa-envelope"></i>
+    <span class="fa-layers-counter" style="background:Tomato">1,419</span>
+  </span>
+</div>
+
+
+</body>
+
+
+</html>
